@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "InternInformation.py",
         "cursor": {
-          "lineNumber": 64,
-          "column": 22
+          "lineNumber": 36,
+          "column": 33
         },
         "config": {
           "runtime": "python3.8",
@@ -67,7 +67,7 @@
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
-      "dialect": null,
+      "dialect": "CloudFormation",
       "definitions": null
     },
     "envVariables": [

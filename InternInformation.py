@@ -33,7 +33,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "Hello, welcome to Amazon. Please let me know your name inorder to proceed."
-        reprompt_text = "I am ALexa. What's you name?"
+        reprompt_text = "I am Alexa. What's you name?"
 
         return (
             handler_input.response_builder
@@ -60,7 +60,7 @@ class InternInformationHandler(AbstractRequestHandler):
                 TableName="InternInformation",
                 Key={
                     'name': {
-                        'S': "${name}"
+                        'S': name
                     }
                 }
             )
