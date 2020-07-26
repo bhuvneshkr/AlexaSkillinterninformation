@@ -1,0 +1,112 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "5079327c-f55c-4636-a025-fb9b1456c38a": {
+        "id": "5079327c-f55c-4636-a025-fb9b1456c38a",
+        "parent": null,
+        "name": "InternInformation.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "InternInformation.py",
+        "cursor": {
+          "lineNumber": 64,
+          "column": 22
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "InternInformation"
+        },
+        "triggers": [
+          {
+            "resourceName": "alexaSK2d62eb22464647f1ba03295dbfacf8c9",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "openFiles": [
+      "5079327c-f55c-4636-a025-fb9b1456c38a"
+    ],
+    "currentFileId": "5079327c-f55c-4636-a025-fb9b1456c38a",
+    "resources": {
+      "alexaSK2d62eb22464647f1ba03295dbfacf8c9": {
+        "name": "alexaSK2d62eb22464647f1ba03295dbfacf8c9",
+        "type": "ALEXA",
+        "config": {
+          "type": 1,
+          "verifiedID": true,
+          "skillID": "amzn1.ask.skill.2d62eb22-4646-47f1-ba03-295dbfacf8c9",
+          "applicationID": ""
+        }
+      },
+      "ddbInternInformation": {
+        "name": "ddbInternInformation",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:us-east-1:280146033586:table/InternInformation",
+            "name": "InternInformation",
+            "partitionKey": "name",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 1
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.12.27",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.1.1",
+    "projectName": "InternInformation",
+    "projectDescription": "Read intern information from DynamoDb",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {}
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "AlexaSkillinterninformation",
+      "url": "https://github.com/bhuvneshkr/AlexaSkillinterninformation"
+    }
+  }
+}
